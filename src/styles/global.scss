@@ -6,11 +6,36 @@
 	padding: 0;
 }
 
-body {
-	background: #fafafa;
-}
 
 a {
 	color: $primaryColor;
 	text-decoration: none;
+}
+
+html,
+body,
+#app {
+	width: 100%;
+	height: 100%;
+	background: #fafafa;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main {
+	width: 100%;
+	flex: 1 1 auto;
+	margin: 0 0 0 250px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1400px;
+	padding: 0 20px;
+	margin: auto;
 }
