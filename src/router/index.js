@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Index from '@/pages/index.vue'
-import Typography from '@/pages/Typography.vue'
-import Button from '@/pages/Button.vue'
+import TypographyPage from '@/pages/TypographyPage.vue'
+import ButtonPage from '@/pages/ButtonPage.vue'
 
 const router = createRouter({
 	history: createWebHistory()
@@ -15,12 +15,12 @@ const router = createRouter({
 		{
 			path: '/button',
 			name: 'button',
-			component: Button
+			component: ButtonPage
 		},
 		{
 			path: '/typography',
 			name: 'typography',
-			component: Typography
+			component: TypographyPage
 		},
 	]
 })

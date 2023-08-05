@@ -1,6 +1,13 @@
 <script setup>
 import { ref } from "vue";
 
+const props = defineProps({
+  openSidebar: {
+    type: Boolean,
+    required: true,
+  },
+});
+
 const links = ref([
   { name: "Typography", href: "/typography" },
   { name: "Button", href: "/button" },
@@ -8,7 +15,7 @@ const links = ref([
 </script>
 
 <template>
-  <div class="sidebar">
+  <div :class="['sidebar', { 'sidebar--open': openSidebar }]">
     <RouterLink
       class="sidebar__link"
       v-for="(link, index) in links"
@@ -32,6 +39,10 @@ const links = ref([
   padding: 20px;
   transition: $baseTransition;
   box-shadow: $boxShadow;
+  transform: translateX(-250px);
+  &--open {
+    transform: translateX(0);
+  }
   &__link {
     display: block;
     border-radius: 12px;
