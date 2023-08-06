@@ -11,6 +11,7 @@ const props = defineProps({
 const links = ref([
   { name: "Typography", href: "/typography" },
   { name: "Button", href: "/button" },
+  { name: "Checkbox", href: "/checkbox" },
 ]);
 </script>
 
@@ -32,7 +33,6 @@ const links = ref([
 .sidebar {
   position: fixed;
   left: 0;
-  top: 62px;
   height: 100%;
   background: #fff;
   width: 250px;
@@ -40,19 +40,21 @@ const links = ref([
   transition: $baseTransition;
   box-shadow: $boxShadow;
   transform: translateX(-250px);
+  z-index: 5;
   &--open {
     transform: translateX(0);
   }
   &__link {
+    color: #000;
     display: block;
     border-radius: 12px;
-    padding: 10px;
+    padding: 5px;
     border: solid 2px #fff;
     transition: $baseTransition;
     font-weight: bold;
-    margin: 0 0 10px;
+    margin: 0 0 5px;
     &:hover {
-      border-color: $primaryColor;
+      color: $primaryColor;
     }
   }
 }

@@ -14,10 +14,7 @@ const toggleMenu = () => {
 <template>
   <div class="wrapper">
     <div class="toggle" @click="toggleMenu">&#5125</div>
-    
-    <v-memo>
-      <LayoutHeader />
-    </v-memo>
+    <LayoutHeader />
     <LayoutSidebar  :openSidebar="isOpenMenu"/>
     <main :class="['main', {'main--full': !isOpenMenu}]">
       <RouterView />
@@ -37,11 +34,10 @@ const toggleMenu = () => {
 .toggle {
   position: fixed;
   left: 0;
-  top: 62px;
   width: 15px;
   height: 100%;
   background: $primaryColor;
-  z-index: 1;
+  z-index: 6;
   cursor: pointer;
   color: #fff;
   display: flex;

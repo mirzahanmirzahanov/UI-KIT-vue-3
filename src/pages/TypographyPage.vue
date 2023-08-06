@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <div class="typography">
-    <div class="typography__container container">
+  <div class="typography-page">
+    <div class="typography-page__container">
       <h1 class="heading-1">Typography</h1>
       <h1 class="heading-1">Heading 1</h1>
       <h2 class="heading-2">Heading 2</h2>

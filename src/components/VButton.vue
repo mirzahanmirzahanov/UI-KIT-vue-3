@@ -25,7 +25,22 @@ const props = defineProps({
     required: false,
     default: false,
   },
+  icon: {
+    type: String,
+    required: false,
+  },
+  size: {
+    type: String,
+    required: false,
+    default: "normal",
+  },
 });
+
+const emit = defineEmits(["emitClickButton"]);
+
+const clickButton = () => {
+  emit("emitClickButton");
+};
 </script>
 
 <template>
@@ -35,10 +50,16 @@ const props = defineProps({
       `btn--${color}`,
       { 'btn--rounded': rounded },
       { 'btn--outlined': outlined },
+      { 'btn--icon': icon },
+      { 'btn--large': size === 'large' },
     ]"
     :disabled="disabled"
+    @click="clickButton"
   >
-    {{ label }}
+    <span v-if="icon">
+      <font-awesome-icon :icon="`fa-regular fa-${icon}`" />
+    </span>
+    <span v-else>{{ label }}</span>
   </button>
 </template>
 
@@ -105,6 +126,16 @@ const props = defineProps({
     &:enabled:hover {
       color: #fff;
     }
+  }
+  &--icon {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  &--large {
+    height: 50px;
+    padding: 0 30px;
   }
   &:disabled {
     opacity: 0.6;
