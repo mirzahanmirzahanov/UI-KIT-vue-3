@@ -3,6 +3,7 @@ import Index from '@/pages/index.vue'
 import TypographyPage from '@/pages/TypographyPage.vue'
 import ButtonPage from '@/pages/ButtonPage.vue'
 import CheckboxPage from '@/pages/CheckboxPage.vue'
+import RadioButtonPage from '@/pages/RadioButtonPage.vue'
 
 const router = createRouter({
 	history: createWebHistory()
@@ -15,18 +16,23 @@ const router = createRouter({
 		},
 		{
 			path: '/typography',
-			name: 'typography',
+			name: 'Typography',
 			component: TypographyPage
 		},
 		{
 			path: '/button',
-			name: 'button',
+			name: 'Button',
 			component: ButtonPage
 		},
 		{
 			path: '/checkbox',
-			name: 'checkbox',
+			name: 'Checkbox',
 			component: CheckboxPage
+		},
+		{
+			path: '/radiobutton',
+			name: 'RadioButton',
+			component: RadioButtonPage
 		},
 	]
 })
