@@ -58,7 +58,7 @@ const inputHandle = (e) => {
     :disabled="disabled"
     @input="inputHandle($event)"
   />
-	<label :for="id">{{ label }}</label>
+  <label :for="id">{{ label }}</label>
   <label :for="id" class="switch--label" v-if="type === 'switch'">
     {{ label }}
   </label>
@@ -91,22 +91,22 @@ const inputHandle = (e) => {
     background-size: 50% 50%;
   }
   &:checked + label::before {
-    border-color: $primaryColor;
-    background-color: $primaryColor;
+    border-color: $primary;
+    background-color: $primary;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
   }
   &:not(:disabled):not(:checked) + label:hover::before {
     border-color: $primaryHover;
   }
   &:not(:disabled):active + label::before {
-    background-color: $primaryColor;
+    background-color: $primary;
     border: 1px solid #ecebed;
   }
   &:focus + label::before {
     box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.07);
   }
   &:focus:not(:checked) + label::before {
-    border-color: $primaryColor;
+    border-color: $primary;
   }
   &:disabled + label::before {
     background-color: #e9ecef;
@@ -145,7 +145,7 @@ const inputHandle = (e) => {
       width: 26px;
       height: 26px;
       background: #fff;
-      background: $primaryColor;
+      background: $primary;
       border-radius: 90px;
       transition: 0.3s;
       transform: translateY(-50%);
@@ -153,7 +153,7 @@ const inputHandle = (e) => {
   }
   &:checked {
     & + label {
-      background: $primaryColor;
+      background: $primary;
       &:after {
         background: #fff;
         left: calc(100% - 5px);

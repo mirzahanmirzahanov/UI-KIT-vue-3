@@ -1,17 +1,31 @@
-$primaryColor: #6979f8;
+$primary: #6979f8;
 $primaryHover: #a5affb;
-$secondColor: #be52f2;
+$second: #be52f2;
 $secondHover: #dba5f5;
-$successColor: #00c48c;
+$success: #00c48c;
 $successHover: #7ddfc3;
-$infoColor: #0084f4;
+$info: #0084f4;
 $infoHover: #66b5f8;
-$warningColor: #ffa26b;
+$warning: #ffa26b;
 $warningHover: #ffc7a6;
-$dangerColor: #ff647c;
+$danger: #ff647c;
 $dangerHover: #fdafbb;
-
 
 
 $boxShadow: 0 0 10px rgba(0, 0, 0, 0.07);
 $baseTransition: .2s ease-in-out;
+
+:root {
+	--primary: #6979f8;
+	--primary-hover: #A5AFFB;
+	--second: #BE52F2;
+	--second-hover: #DBA5F5;
+	--success: #00C48C;
+	--success-hover: #7DDFC3;
+	--info: #0084F4;
+	--info-hover: #66B5F8;
+	--warning: #FFA26B;
+	--warning-hover: #FFC7A6;
+	--danger: #FF647C;
+	--danger-hover: #FDAFBB;
+}

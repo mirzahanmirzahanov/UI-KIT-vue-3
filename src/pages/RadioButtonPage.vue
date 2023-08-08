@@ -9,7 +9,7 @@ const footballClubs = ref([
   { name: "Real Madrid", id: "c4" },
 ]);
 
-const selectedClub = ref({});
+const selectedClub = ref(null);
 const disabledRadio = ref(true);
 const disabledRadioChecked = ref(false);
 </script>

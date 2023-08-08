@@ -76,43 +76,43 @@ const clickButton = () => {
   font-size: 15px;
   transition: $baseTransition;
   &--primary {
-    background: $primaryColor;
-    border: 1px solid $primaryColor;
+    background: $primary;
+    border: 1px solid $primary;
     &:enabled:hover {
       background: $primaryHover;
     }
   }
   &--second {
-    background: $secondColor;
-    border: 1px solid $secondColor;
+    background: $second;
+    border: 1px solid $second;
     &:enabled:hover {
       background: $secondHover;
     }
   }
   &--success {
-    background: $successColor;
-    border: 1px solid $successColor;
+    background: $success;
+    border: 1px solid $success;
     &:enabled:hover {
       background: $successHover;
     }
   }
   &--info {
-    background: $infoColor;
-    border: 1px solid $infoColor;
+    background: $info;
+    border: 1px solid $info;
     &:enabled:hover {
       background: $infoHover;
     }
   }
   &--warning {
-    background: $warningColor;
-    border: 1px solid $warningColor;
+    background: $warning;
+    border: 1px solid $warning;
     &:enabled:hover {
       background: $warningHover;
     }
   }
   &--danger {
-    background: $dangerColor;
-    border: 1px solid $dangerColor;
+    background: $danger;
+    border: 1px solid $danger;
     &:enabled:hover {
       background: $dangerHover;
     }

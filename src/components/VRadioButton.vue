@@ -79,22 +79,22 @@ const inputHandle = (e) => {
     border-radius: 50%;
   }
   &:checked + label::before {
-    border-color: $primaryColor;
-    background-color: $primaryColor;
+    border-color: $primary;
+    background-color: $primary;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
   }
   &:not(:disabled):not(:checked) + label:hover::before {
     border-color: $primaryHover;
   }
   &:not(:disabled):active + label::before {
-    background-color: $primaryColor;
+    background-color: $primary;
     border: 1px solid #ecebed;
   }
   &:focus + label::before {
     box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.07);
   }
   &:focus:not(:checked) + label::before {
-    border-color: $primaryColor;
+    border-color: $primary;
   }
   &:disabled + label::before {
     background-color: #e9ecef;

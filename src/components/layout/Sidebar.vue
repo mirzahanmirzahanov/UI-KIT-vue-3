@@ -13,6 +13,7 @@ const links = ref([
   { name: "Button", href: "/button" },
   { name: "Checkbox", href: "/checkbox" },
   { name: "RadioButton", href: "/radiobutton" },
+  { name: "ProgressBar", href: "/progress" },
 ]);
 </script>
 
@@ -55,7 +56,7 @@ const links = ref([
     font-weight: bold;
     margin: 0 0 5px;
     &:hover {
-      color: $primaryColor;
+      color: $primary;
     }
   }
 }

@@ -36,7 +36,7 @@ const toggleMenu = () => {
   left: 0;
   width: 15px;
   height: 100%;
-  background: $primaryColor;
+  background: $primary;
   z-index: 6;
   cursor: pointer;
   color: #fff;

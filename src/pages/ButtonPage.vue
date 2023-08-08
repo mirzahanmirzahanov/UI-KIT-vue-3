@@ -1,5 +1,5 @@
 <script setup>
-import VButton from "@/components/VButton.vue";
+import VButton from "../components/VButton.vue";
 const logi = () => {
   alert('You clicked button!!!')
 };
@@ -36,7 +36,7 @@ const logi = () => {
         <VButton :label="'Warning'" :color="'warning'" rounded />
         <VButton :label="'Danger'" :color="'danger'" rounded />
       </div>
-      <h2 class="heading-2">Rounded</h2>
+      <h2 class="heading-2">Bordered</h2>
       <div class="line">
         <VButton :label="'Primary'" :color="'primary'" outlined />
         <VButton :label="'Secondary'" :color="'second'" outlined />
