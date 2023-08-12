@@ -5,6 +5,7 @@ import ButtonPage from '@/pages/ButtonPage.vue'
 import CheckboxPage from '@/pages/CheckboxPage.vue'
 import RadioButtonPage from '@/pages/RadioButtonPage.vue'
 import ProgressPage from '@/pages/ProgressPage.vue'
+import InputPage from '@/pages/InputPage.vue'
 
 const router = createRouter({
 	history: createWebHistory()
@@ -39,6 +40,11 @@ const router = createRouter({
 			path: '/progress',
 			name: 'Progress',
 			component: ProgressPage
+		},
+		{
+			path: '/input',
+			name: 'InputPage',
+			component: InputPage
 		},
 	]
 })
