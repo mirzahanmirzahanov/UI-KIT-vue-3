@@ -16,6 +16,7 @@ const links = ref([
   { name: "ProgressBar", href: "/progress" },
   { name: "Input", href: "/input" },
   { name: "Tabs", href: "/tabs" },
+  { name: "Table", href: "/table" },
 ]);
 </script>
 

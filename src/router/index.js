@@ -7,6 +7,7 @@ import RadioButtonPage from '@/pages/RadioButtonPage.vue'
 import ProgressPage from '@/pages/ProgressPage.vue'
 import InputPage from '@/pages/InputPage.vue'
 import TabsPage from '@/pages/TabsPage.vue'
+import TablePage from '@/pages/TablePage.vue'
 
 const router = createRouter({
 	history: createWebHistory()
@@ -51,6 +52,11 @@ const router = createRouter({
 			path: '/tabs',
 			name: 'TabsPage',
 			component: TabsPage
+		},
+		{
+			path: '/table',
+			name: 'TablePage',
+			component: TablePage
 		},
 	]
 })
